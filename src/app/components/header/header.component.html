@@ -1,1 +1,55 @@
-<p>header works!</p>
+<div class="header-row">
+    <div class="logo">
+        <a href="https://h1teq.com" target="_blank">
+            <img src="../../../assets/images/h1teq_logo_stacked_white.png" />
+        </a>
+    </div>
+    <ul>
+        <li>
+            <a [routerLink]="['/landing']">Landing</a>
+        </li>
+        <li>
+            <a [routerLink]="['/detail']">Dominique's Detail</a>
+        </li>
+        <li>
+            <a href="https://twitter.com/starwars" target="_blank">Star Wars</a>
+        </li>
+    </ul>
+</div>
+
+<style>
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .logo img {
+        padding: 25px;
+        width: 100px;
+
+    }
+
+    .header-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-row ul {
+        list-style: none;
+        margin: 25px;
+
+    }
+
+    .header-row li {
+        display: inline-block;
+        margin: 15px;
+        color: #fff;
+        font-size: 25px;
+    }
+</style>

@@ -11,6 +11,10 @@ export const routes: Routes = [
     component: LandingComponent
   },
   {
+    path: 'landing',
+    component: LandingComponent
+  },
+  {
     path: 'detail',
     component: DetailPageComponent
   },

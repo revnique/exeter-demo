@@ -1,1 +1,38 @@
-<p>footer works!</p>
+<div class="footer-row">
+    <div class="external-logo" *ngFor="let logo of logos">
+        <div class="logo-container">
+            <div>
+                {{logo.name}}
+            </div>
+
+            <a href="{{logo.href}}" target="_blank"><img src="../../../../assets/images/{{logo.src}}" /></a>
+
+        </div>
+    </div>
+</div>
+<style>
+    .logo-container {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .footer-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 70px;
+        border-top: 1px solid #fff;
+        color: #000;
+        background-color: rgba(255, 255, 255, .8);
+        padding: 15px;
+    }
+
+    .footer-row img {
+        max-height: 50px;
+    }
+</style>
